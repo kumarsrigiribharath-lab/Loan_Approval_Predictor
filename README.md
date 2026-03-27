@@ -72,6 +72,11 @@ streamlit run app.py
 
 * Loan Approval Status
 * Probability Score (Model Confidence)
+
+# Project Preview:
+
+![input_data](https://github.com/user-attachments/assets/a1f9ae8c-a494-4ed6-959a-9f1516e02b95)
+![Approval_output](https://github.com/user-attachments/assets/a5e98180-a6c3-4aca-93af-ff8713da07ce)
   
 # Key Learnings:
 
