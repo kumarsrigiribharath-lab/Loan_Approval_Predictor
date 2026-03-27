@@ -40,15 +40,7 @@ The following models were trained and evaluated:
 
 # Project Structure:
 
-loan-approval-predictor/
-├── data/
-    └── loan_data.csv
-├── model/
-    └── model.pkl
-├── train.py
-├── app.py
-├── requirements.txt
-└── README.md
+loan-approval-predictor = data, loan_data.csv, model(model.pkl), train.py, app.py, requirements.txt, README.md
 
 # How It Works:
 
