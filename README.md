@@ -40,12 +40,7 @@ SVM                     =89%
 # Project Structure:
 
 Loan-Approval-Predictor:
-1. dataset->loan_dataset.csv
-3. model(model.pkl)
-4. train.py
-5. app.py
-6. requirements.txt
-7. README.md
+  loan_dataset.csv->model(model.pkl)->train.py->app.py->requirements.txt->README.md
 
 # How It Works:
 
