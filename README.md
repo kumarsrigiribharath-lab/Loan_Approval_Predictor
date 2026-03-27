@@ -31,9 +31,9 @@ The following models were trained and evaluated:
 
 # Model Performance:
 
-Logistic Regression      88%     
-Random Forest            90%         
-SVM                      89%      
+Logistic Regression     =88%     
+Random Forest           =90%         
+SVM                     =89%      
 
 > Random Forest outperformed other models with better generalization.
 
