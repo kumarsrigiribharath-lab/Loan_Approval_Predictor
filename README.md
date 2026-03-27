@@ -64,7 +64,7 @@ streamlit run app.py
 # Output:
 
 * Loan Approval Status
-* Probability Score (Model Confidence)
+* Probability Score
 
 # Project Preview:
 
