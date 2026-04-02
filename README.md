@@ -50,17 +50,6 @@ Loan-Approval-Predictor:
 3. Model predicts loan status
 4. Probability score is displayed
 
-# Run Locally:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/loan-approval-predictor.git
-cd loan-approval-predictor
-
-pip install -r requirements.txt
-python train.py
-streamlit run app.py
-```
-
 # Output:
 
 * Loan Approval Status
@@ -70,7 +59,10 @@ streamlit run app.py
 
 ![input_data1](https://github.com/user-attachments/assets/daa89f57-7e64-4fd4-a059-56cd2b560a37)
 
-  
+# Live DEMO:
+
+https://loanapprovalpredictor-suoxewdw2r9vhem73sg9ug.streamlit.app/
+
 # Key Learnings:
 
 * Data preprocessing & missing value handling
