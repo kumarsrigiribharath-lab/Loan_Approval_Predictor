@@ -57,7 +57,7 @@ Loan-Approval-Predictor:
 
 # Project Preview:
 
-![input_data1](input_data1)
+![input_data1](input_data.png)
 
 ![input_data1](https://github.com/user-attachments/assets/daa89f57-7e64-4fd4-a059-56cd2b560a37)
 
