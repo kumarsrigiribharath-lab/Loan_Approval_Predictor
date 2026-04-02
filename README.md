@@ -68,8 +68,7 @@ streamlit run app.py
 
 # Project Preview:
 
-![input_data](https://github.com/user-attachments/assets/2689c7a3-7155-482b-bc5c-7f58aae4c1bd)
-![Approval_output](https://github.com/user-attachments/assets/00bf4e2a-ffbf-4814-ba3b-47c39d2338a6)
+![input_data1](https://github.com/user-attachments/assets/daa89f57-7e64-4fd4-a059-56cd2b560a37)
 
   
 # Key Learnings:
