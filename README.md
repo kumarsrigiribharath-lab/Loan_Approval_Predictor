@@ -67,6 +67,7 @@ streamlit run app.py
 * Probability Score
 
 # Project Preview:
+![input_data](https://github.com/user-attachments/assets/bc4aa820-570b-4c6c-818f-8ff2c0016cdc)
 
 ![input_data](https://github.com/user-attachments/assets/a1f9ae8c-a494-4ed6-959a-9f1516e02b95)
 ![Approval_output](https://github.com/user-attachments/assets/00bf4e2a-ffbf-4814-ba3b-47c39d2338a6)
