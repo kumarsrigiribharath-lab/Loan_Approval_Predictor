@@ -25,8 +25,7 @@ The following models were trained and evaluated:
 * Support Vector Machine (SVM)
 
 # Model Performance:
-
-# Model & Accuracy:
+   Model & Accuracy:
 * Logistic Regression => 88%
 * Random Forest => 90%
 * SVM => 89%
@@ -67,13 +66,13 @@ Loan-Approval-Predictor:
 3.requirements.txt
 4.README.md
    * model:
-     a)model.pkl
-     b)scaler.pkl
+     a) model.pkl
+     b) scaler.pkl
    * data:
-     a)loan_dataset.csv
+     a) loan_dataset.csv
    * images:
-     a)approved.png
-     b)not_approved.png
+     a) approved.png
+     b) not_approved.png
 
 # How to Run Locally:
 
