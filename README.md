@@ -62,30 +62,26 @@ Random Forest outperformed other models with better generalization.
 # Project Structure:
 
 Loan-Approval-Predictor/
-│
-├── app.py
-├── train.py
-├── requirements.txt
-├── README.md
-│
-├── model/
-│   ├── model.pkl
-│   ├── scaler.pkl
-│
-├── data/
-│   └── loan_dataset.csv
-│
-├── images/
-│   ├── approved.png
-│   └── not_approved.png
+ app.py
+ train.py
+ requirements.txt
+ README.md
+ model/
+   model.pkl
+   scaler.pkl
+ data/
+   loan_dataset.csv
+ images/
+   approved.png
+   not_approved.png
 
 # How to Run Locally:
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-pip install -r requirements.txt
-python train.py
-streamlit run app.py
+* git clone https://github.com/kumarsrigiribharath-lab/Loan_Approval_Predictor/tree/main
+* cd Loan_Approval_Predictor
+* pip install -r requirements.txt
+* python train.py
+* streamlit run app.py
 
 # Key Learnings:
 
