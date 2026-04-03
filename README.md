@@ -26,10 +26,10 @@ The following models were trained and evaluated:
 
 # Model Performance:
 
-# Model| Accuracy:
-* Logistic Regression| 88%
-* Random Forest| 90%
-* SVM| 89%
+# Model & Accuracy:
+* Logistic Regression => 88%
+* Random Forest => 90%
+* SVM => 89%
 
 Random Forest outperformed other models with better generalization.
 
@@ -62,18 +62,18 @@ Random Forest outperformed other models with better generalization.
 # Project Structure:
 
 Loan-Approval-Predictor/
- app.py
- train.py
- requirements.txt
- README.md
- model/
-   model.pkl
-   scaler.pkl
- data/
-   loan_dataset.csv
- images/
-   approved.png
-   not_approved.png
+   app.py
+   train.py
+   requirements.txt
+   README.md
+   model/
+     model.pkl
+     scaler.pkl
+   data/
+     loan_dataset.csv
+   images/
+     approved.png
+     not_approved.png
 
 # How to Run Locally:
 
