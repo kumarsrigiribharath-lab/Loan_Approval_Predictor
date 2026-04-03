@@ -56,10 +56,12 @@ Loan-Approval-Predictor:
 * Probability Score
 
 # Project Preview:
-
-![input_data1](input_data.png)
-
-# ![input_data1](https://github.com/user-attachments/assets/daa89f57-7e64-4fd4-a059-56cd2b560a37)
+# Loan Approved Predictor:
+<img width="1900" height="835" alt="IP_data" src="https://github.com/user-attachments/assets/1d14ef80-bc57-4879-9f23-cd6d52819c4c" />
+<img width="1872" height="807" alt="IP_unapproved" src="https://github.com/user-attachments/assets/0f0e4c81-a50f-4106-b5f6-ef641eef15d8" />
+# Loan Unapproved Predictor;
+<img width="1897" height="816" alt="OP_approved" src="https://github.com/user-attachments/assets/c09e010f-20f8-48a2-8699-fd719a51919f" />
+<img width="1910" height="830" alt="OP_unapproved" src="https://github.com/user-attachments/assets/ea59878b-a2a5-41e5-9254-000576639cc5" />
 
 # Live DEMO:
 
