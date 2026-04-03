@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 
 model = pickle.load(open("model.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
 
 st.set_page_config(page_title="Loan Predictor", layout="wide")
 
@@ -45,8 +46,10 @@ st.markdown("<p style='text-align:center;'>Enter applicant details to predict lo
 
 st.divider()
 col1, col2 = st.columns(2)
+
 with col1:
     st.subheader("👤 Personal Details:")
+
     gender = st.selectbox("Gender", ["Select", "Male", "Female"])
     married = st.selectbox("Married", ["Select", "Yes", "No"])
     dependents = st.selectbox("Dependents", ["Select", "0", "1", "2", "3+"])
@@ -55,10 +58,12 @@ with col1:
 
 with col2:
     st.subheader("💼 Financial Details:")
+
     applicant_income = st.text_input("Applicant Income", placeholder="e.g., 5000")
     coapplicant_income = st.text_input("Coapplicant Income", placeholder="e.g., 2000")
     loan_amount = st.text_input("Loan Amount", placeholder="e.g., 150")
     loan_term = st.text_input("Loan Term", placeholder="e.g., 360")
+
     credit_history = st.selectbox("Credit History", ["Select", 1, 0])
     property_area = st.selectbox("Property Area", ["Select", "Urban", "Semiurban", "Rural"])
 
@@ -70,6 +75,7 @@ if st.button("🚀 Predict Loan Status"):
         or loan_term == ""
     ):
         st.warning("⚠️ Please fill all fields correctly")
+
     else:
         try:
             applicant_income = float(applicant_income)
@@ -81,10 +87,12 @@ if st.button("🚀 Predict Loan Status"):
             st.stop()
 
         dependents = 3 if dependents == "3+" else int(dependents)
+
         gender = 1 if gender == "Male" else 0
         married = 1 if married == "Yes" else 0
         education = 1 if education == "Graduate" else 0
         self_employed = 1 if self_employed == "Yes" else 0
+
         property_map = {"Rural": 0, "Semiurban": 1, "Urban": 2}
         property_area = property_map[property_area]
 
@@ -98,9 +106,9 @@ if st.button("🚀 Predict Loan Status"):
             "Loan_Amount_Term","Credit_History","Property_Area"
         ])
 
+        input_data = scaler.transform(input_data)
         prediction = model.predict(input_data)[0]
 
-        # Probability (if available)
         try:
             prob = model.predict_proba(input_data)[0][1]
         except:
@@ -120,7 +128,7 @@ if st.button("🚀 Predict Loan Status"):
                     font-weight:bold;
                     color:#d1e7dd;
                     border:2px solid #198754;">
-                    ✅ Loan Approved
+                    ✅ Loan Approved...
                     <br><br>
                     {"Approval Probability: " + format(prob, ".2f") if prob is not None else ""}
                 </div>
@@ -137,7 +145,7 @@ if st.button("🚀 Predict Loan Status"):
                     font-weight:bold;
                     color:#f8d7da;
                     border:2px solid #dc3545;">
-                    ❌ Loan Not Approved
+                    ❌ Loan Not Approved...
                     <br><br>
                     {"Approval Probability: " + format(prob, ".2f") if prob is not None else ""}
                 </div>
